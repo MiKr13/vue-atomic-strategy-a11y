@@ -4,6 +4,15 @@
 @import "flexboxgrid";
 @import "partials/buttons";
 @import "partials/icons";
+@import "partials/testimonal";
+@import "partials/header";
+@import "partials/headings";
+@import "partials/text";
+@import "partials/fullheight";
+@import "partials/images";
+@import "partials/position";
+@import "partials/backgrounds";
+@import "partials/testimonialsection";
 
 *,
 *:after,
@@ -13,8 +22,13 @@
     @include border-box;
 }
 
-#app {
+* {
   font-family: $font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    color: $color2;
+    overflow-x: hidden;
 }

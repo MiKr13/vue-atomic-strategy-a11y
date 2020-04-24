@@ -1,0 +1,61 @@
+.image-container {
+  overflow: hidden;
+  padding: 2em 5em 2em 1em;
+}
+
+.image-style {
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  object-fit: contain;
+}
+
+.image-background,
+.image-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.image-background {
+  background: url(~/src/assets/startup-meeting.jpg) center center no-repeat;
+  background-size: cover;
+  z-index: 1
+}
+
+.image-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.image-content {
+  position: relative;
+  z-index: 3;
+  /* Finally, style and place the content */
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-inline {
+  width: 300px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & .avatar-details {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .image-container {
+    padding: 2em;
+  }
+}

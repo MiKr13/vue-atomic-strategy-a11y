@@ -1,12 +1,10 @@
 <template>
-  <a :href="link">
-    <font-awesome-icon :icon="['fa', name]" style="icon" class="icon"/>
-  </a>
+  <font-awesome-icon :icon="['fa', name]" style="icon" class="icon" :size="size"/>
 </template>
 
 <script>
 export default {
-  name: "FlatButton",
+  name: "Icon",
 
   props: {
     name: {
@@ -15,10 +13,11 @@ export default {
         return "Button";
       }
     },
-    link: {
+
+    size: {
       type: String,
       default() {
-        return "#";
+        return "xs";
       }
     }
   }

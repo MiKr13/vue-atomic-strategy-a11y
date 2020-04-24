@@ -1,10 +1,17 @@
 <template>
-  <button type="submit" :formaction="link" class="btn btn-flat">{{ name }}</button>
+  <a :href="link">
+    <icon :name="name" size="xs"/>
+  </a>
 </template>
 
 <script>
+import Icon from "./Icon";
 export default {
-  name: "FlatButton",
+  name: "LinkIcon",
+
+  components: {
+    Icon
+  },
 
   props: {
     name: {
@@ -22,4 +29,3 @@ export default {
   }
 };
 </script>
-

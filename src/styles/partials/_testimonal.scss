@@ -1,0 +1,22 @@
+.testimonal {
+  position: relative;
+  background: #FFF;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+  width: 250px; 
+  height: 150px;
+  padding: 5px 10px;
+
+  
+  &:before{
+    content: "";
+    position: absolute;
+    top: 150px;
+    left: 125px;
+    transform: skewX(20deg);
+    z-index: 1;
+    border: solid 15px transparent;
+    border-top-color: #FFF;
+  }
+}

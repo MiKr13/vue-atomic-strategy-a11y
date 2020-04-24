@@ -1,15 +1,18 @@
 <template>
-  <div id="app"/>
+  <home-page/>
 </template>
 
 <script>
+import HomePage from "./components/HomePage";
 export default {
   name: "App",
-  components: {}
+  components: {
+    HomePage
+  }
 };
 </script>
 
 <style lang="sass">
-@import './styles/main';
+@import './styles/main.scss';
 </style>
 

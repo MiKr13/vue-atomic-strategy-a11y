@@ -16,7 +16,13 @@ $flexboxgrid-max-width: 1200px !default;
 // Extra gutter settings
 $gutter-compensation: $flexboxgrid-gutter-width * .5 * -1;
 $half-gutter-width: $flexboxgrid-gutter-width * .5;
-// Accent Color
-$accent-color: #f6774f;
 // Button radius
-$radius: 10em;
+$radius: 2em;
+// Colors
+$color1: #0f0f17ff;
+$color2: #564e58ff;
+$color3: #b54c0aff;
+$color4: #fcfcfcff;
+$color5: #c1c1c1aa;
+// Bars size
+$bar-pad: 20px 5px;
