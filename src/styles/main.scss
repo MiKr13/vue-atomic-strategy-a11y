@@ -1,0 +1,20 @@
+@import "partials/variables";
+@import "mixins/borderbox";
+@import "mixins/columnrowcommon";
+@import "flexboxgrid";
+@import "partials/buttons";
+@import "partials/icons";
+
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0; 
+    @include border-box;
+}
+
+#app {
+  font-family: $font-family;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
