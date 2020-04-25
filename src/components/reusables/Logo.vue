@@ -1,5 +1,5 @@
 <template>
-  <h4 class="logo-text">COMPANY <span class="accent-text"> LOGO</span></h4>
+  <h4 role="banner" class="logo-text">COMPANY <span class="accent-text"> LOGO</span></h4>
 </template>
 
 <script>

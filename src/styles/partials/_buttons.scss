@@ -1,19 +1,40 @@
 .btn {
   border: none;
-  color: white;
+  color: $color5;
   overflow: hidden;
-  margin: 0 1rem;
+  margin: $button-margin;
   padding: 0;
   width: 80px;
   height: 30px;
   outline: none;
+  
+  &:hover, &:focus {
+    box-shadow: 2px 2px 2px $color4;
+    background-color: $color5;
+  }
 }
 
 .btn-flat {
   background-color: transparent;
+}
 
+.btn-accent {
+  background-color: $color3;
+  border: 2px solid $color3;
+  color: $color3;
+}
+
+.btn-rounded {
+  border-radius: $radius;
+  color: $color4;
+  width: 150px;
+  
   &:hover, &:focus {
-    box-shadow: 0.3em 0.3em 1em rgba(0,0,0,0.3);
-    background-color: #ffffffc2;
+    background-color: $color3;
   }
+}
+
+.link-button {
+  margin: $button-margin;
+  padding: $bar-pad;
 }

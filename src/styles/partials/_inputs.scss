@@ -1,0 +1,28 @@
+.input {
+  border: 0;
+  padding: 7px 15px;
+  border: 1px solid $color5;
+  background: $color4;
+  border-radius: $input-border-radius;
+  width: 100%;
+}
+
+.textarea {
+  border: 0;
+  padding: 7px 15px;
+  border: 1px solid $color5;
+  background: $color4;
+  border-radius: $input-border-radius;
+  width: 100%;
+}
+
+
+@media only screen and (max-width: 990px) {
+  .input {
+    width: 100%;
+  }
+  
+  .textarea {
+    width: 100%;
+  }
+}

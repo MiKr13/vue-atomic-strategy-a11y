@@ -1,6 +1,6 @@
 <template>
   <button v-if="icon" type="submit" :formaction="link" class="btn btn-accent btn-icon btn-rounded">
-    <font-awesome-icon :icon="['fas', 'desktop']"/>
+    <font-awesome-icon :icon="['fa', icon]"/>
     {{ name }}
   </button>
   <button v-else type="submit" :formaction="link" class="btn btn-accent btn-rounded">{{ name }}</button>
@@ -32,16 +32,3 @@ export default {
   }
 };
 </script>
-
-<style lang="sass" scoped>
-.btn-accent {
-  background-color: $accent-color;
-  border: 2px solid $accent-color;
-  color: $accent-color;
-}
-
-.btn-rounded {
-  border-radius: $radius;
-}
-</style>
-

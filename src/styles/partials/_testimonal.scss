@@ -1,13 +1,15 @@
 .testimonal {
   position: relative;
-  background: #FFF;
+  background: $color4;
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;
   border-radius: $radius;
-  width: 250px; 
+  width: 100%;
   height: 150px;
-  padding: 5px 10px;
-
+  padding: $block-pad;
+  -webkit-box-shadow: 5px 6px 7px -2px $color5;
+  -moz-box-shadow: 5px 6px 7px -2px $color5;
+  box-shadow: 5px 6px 7px -2px $color5;
   
   &:before{
     content: "";
@@ -17,6 +19,12 @@
     transform: skewX(20deg);
     z-index: 1;
     border: solid 15px transparent;
-    border-top-color: #FFF;
+    border-top-color: $color4;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .testimonal {
+    width: 100%;
   }
 }

@@ -1,24 +1,24 @@
 <template>
-  <h1 v-if="type === 'h1'">{{ text }}</h1>
-  <h2 v-else>{{ text }}</h2>
+  <h1 aria-label="heading" v-if="type === 'h1'">{{ text }}</h1>
+  <h2 aria-label="heading" v-else>{{ text }}</h2>
 </template>
 
 <script>
 export default {
-  name: "Title",
+  name: 'Title',
 
   props: {
     text: {
       type: String,
       default() {
-        return "";
+        return '';
       }
     },
 
     type: {
       type: String,
       default() {
-        return "h2";
+        return 'h2';
       }
     }
   }

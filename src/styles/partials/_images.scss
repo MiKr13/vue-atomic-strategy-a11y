@@ -20,13 +20,13 @@
 }
 
 .image-background {
-  background: url(~/src/assets/startup-meeting.jpg) center center no-repeat;
+  background: url('https://cdn.pixabay.com/photo/2015/01/09/11/09/startup-594091_960_720.jpg') center center no-repeat;
   background-size: cover;
   z-index: 1
 }
 
 .image-overlay {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   z-index: 2;
 }
 
@@ -35,23 +35,8 @@
   z-index: 3;
   /* Finally, style and place the content */
   color: white;
-  min-height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.avatar-inline {
-  width: 300px;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  & .avatar-details {
-    display: flex;
-    flex-direction: column;
-  }
+  flex-flow: column;
 }
 
 @media only screen and (max-width: 990px) {

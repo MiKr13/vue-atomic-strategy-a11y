@@ -1,7 +1,7 @@
 <template>
-  <div class="row">
+  <div role="main" class="row">
     <div class="col-xs-12 col-md-6 align-center padding-block">
-      <sub-title
+      <app-title type="h2"
         text="Morbi et nulla lacinia, posuere arcu ac, venenatis elit. Morbi eget enim ultricies enim molestie sollicitudin vel ac eros. Praesent sed enim turpis."
       />
       <paragraph
@@ -9,19 +9,19 @@
       />
     </div>
     <div class="col-xs-12 col-md-6 align-center padding-block image-container">
-      <img src="../assets/people-world-map.png" class="image-style">
+      <img src="../assets/people-world-map.png" alt="people world map" class="image-style">
     </div>
   </div>
 </template>
 
 <script>
-import SubTitle from "./reusables/Subtitle";
-import Paragraph from "./reusables/Paragraph";
+import Title from './reusables/Title';
+import Paragraph from './reusables/Paragraph';
 export default {
-  name: "InformationSection",
+  name: 'InformationSection',
 
   components: {
-    SubTitle,
+    "app-title": Title,
     Paragraph
   }
 };

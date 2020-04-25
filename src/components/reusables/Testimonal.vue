@@ -1,24 +1,24 @@
 <template>
   <div>
     <div class="testimonal">
-      <icon name="quote-left" size="lg"/>
-      <paragraph :text="text"/>
+      <app-icon name="quote-left" size="lg" color="accent" style="display: inline-block"/>
+      <paragraph :text="text" style="display: inline-block"/>
     </div>
     <user-avatar/>
   </div>
 </template>
 
 <script>
-import Paragraph from "./Paragraph";
-import Icon from "./Icon";
-import UserAvatar from "./UserAvatar";
+import Paragraph from './Paragraph';
+import AppIcon from './AppIcon';
+import UserAvatar from './UserAvatar';
 
 export default {
-  name: "Testimonal",
+  name: 'Testimonal',
 
   components: {
     Paragraph,
-    Icon,
+    AppIcon,
     UserAvatar
   },
 
@@ -26,7 +26,7 @@ export default {
     text: {
       type: String,
       default() {
-        return "";
+        return '';
       }
     }
   }

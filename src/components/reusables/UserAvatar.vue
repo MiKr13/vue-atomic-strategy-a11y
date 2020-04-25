@@ -1,7 +1,8 @@
 <template>
   <div class="avatar-inline">
     <div class="avatar-circle">
-      <icon name="user" size="md"/>
+      <!-- <app-icon name="user" size="md"/> -->
+      <font-awesome-icon role="img" alt="icons" icon="user" style="icon" class="icon" size="2x"/>
     </div>
     <div class="avatar-details">
       <span class="avatar-username">{{ name }}</span>
@@ -11,26 +12,26 @@
 </template>
 
 <script>
-import Icon from "./Icon";
+import AppIcon from './AppIcon';
 export default {
-  name: "UserAvatar",
+  name: 'UserAvatar',
 
   componenets: {
-    Icon
+    'app-icon': AppIcon
   },
 
   props: {
     name: {
       type: String,
       default() {
-        return "Client name";
+        return 'Client name';
       }
     },
 
     position: {
       type: String,
       default() {
-        return "Position, ORG";
+        return 'Position, ORG';
       }
     }
   }

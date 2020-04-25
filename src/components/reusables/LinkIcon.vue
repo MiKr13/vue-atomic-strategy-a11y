@@ -1,29 +1,35 @@
 <template>
-  <a :href="link">
-    <icon :name="name" size="xs"/>
+  <a class="link-button" :href="link" :aria-label="`button`">
+    <app-icon :name="name" size="xs" :faOrFas="faOrFas"/>
   </a>
 </template>
 
 <script>
-import Icon from "./Icon";
+import AppIcon from './AppIcon';
 export default {
-  name: "LinkIcon",
+  name: 'LinkIcon',
 
   components: {
-    Icon
+    AppIcon
   },
 
   props: {
     name: {
       type: String,
       default() {
-        return "Button";
+        return '';
       }
     },
     link: {
       type: String,
       default() {
-        return "#";
+        return '#';
+      }
+    },
+    faOrFas: {
+      type: String,
+      default() {
+        return 'fa';
       }
     }
   }

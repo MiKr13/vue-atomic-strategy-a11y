@@ -15,4 +15,3 @@ export default {
 <style lang="sass">
 @import './styles/main.scss';
 </style>
-

@@ -18,6 +18,8 @@ $gutter-compensation: $flexboxgrid-gutter-width * .5 * -1;
 $half-gutter-width: $flexboxgrid-gutter-width * .5;
 // Button radius
 $radius: 2em;
+// Circle border
+$circle-radius: 50%;
 // Colors
 $color1: #0f0f17ff;
 $color2: #564e58ff;
@@ -26,3 +28,9 @@ $color4: #fcfcfcff;
 $color5: #c1c1c1aa;
 // Bars size
 $bar-pad: 20px 5px;
+// Block pad
+$block-pad: 10px;
+// Button margin
+$button-margin: 0 1rem;
+// Input border radius
+$input-border-radius: 0.2rem;

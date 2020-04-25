@@ -1,4 +1,5 @@
 @import "partials/variables";
+@import "functions";
 @import "mixins/borderbox";
 @import "mixins/columnrowcommon";
 @import "flexboxgrid";
@@ -6,6 +7,7 @@
 @import "partials/icons";
 @import "partials/testimonal";
 @import "partials/header";
+@import "partials/footer";
 @import "partials/headings";
 @import "partials/text";
 @import "partials/fullheight";
@@ -13,6 +15,12 @@
 @import "partials/position";
 @import "partials/backgrounds";
 @import "partials/testimonialsection";
+@import "partials/avatar";
+@import "partials/form";
+@import "partials/inputs";
+@import "partials/padding";
+@import "partials/margin";
+@import "partials/tilesection";
 
 *,
 *:after,

@@ -1,30 +1,27 @@
 <template>
-  <div>
-    <app-header v-if="!mobileView"/>
-    <app-header-responsive v-else/>
-    <landing-section/>
+  <div role="application">
+    <app-header :mobileView="mobileView"/>
+    <landing-section :mobileView="mobileView"/>
     <information-section/>
-    <testimonial-section/>
+    <testimonial-section :mobileView="mobileView"/>
     <form-section/>
-    <app-footer/>
+    <app-footer :mobileView="mobileView"/>
   </div>
 </template>
 
 <script>
-import AppHeader from "./AppHeader";
-import AppHeaderResponsive from "./AppHeaderResponsive";
-import LandingSection from "./LandingSection";
-import InformationSection from "./InformationSection";
-import TestimonialSection from "./TestimonialSection";
-import FormSection from "./FormSection";
-import AppFooter from "./AppFooter";
+import AppHeader from './AppHeader';
+import LandingSection from './LandingSection';
+import InformationSection from './InformationSection';
+import TestimonialSection from './TestimonialSection';
+import FormSection from './FormSection';
+import AppFooter from './AppFooter';
 
 export default {
-  name: "HomePage",
+  name: 'HomePage',
 
   components: {
     AppHeader,
-    AppHeaderResponsive,
     LandingSection,
     InformationSection,
     TestimonialSection,
@@ -38,7 +35,7 @@ export default {
 
   created() {
     this.handleView();
-    window.addEventListener("resize", this.handleView);
+    window.addEventListener('resize', this.handleView);
   },
 
   methods: {
